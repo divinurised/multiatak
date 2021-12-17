@@ -7,7 +7,6 @@ export const GlobalStyle = createGlobalStyle`
   --lighter-gray: #e5e5e5;
   --semi-light-gray: #d4d4d4;
   --background: #f1f1f1;
-
   --text-gray: #939393;
   --strong: #a70000;
   }
@@ -23,7 +22,6 @@ export const GlobalStyle = createGlobalStyle`
   .App {
     max-width: 100vw;
     overflow: hidden;
-    /* background: var(---background); */
   }
   textarea:focus, input:focus{
     outline: 0;

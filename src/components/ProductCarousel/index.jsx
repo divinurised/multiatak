@@ -19,6 +19,20 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 	const [itemImage2, setItemImage2] = useState('');
 	const [itemImage3, setItemImage3] = useState('');
 	const [itemImage4, setItemImage4] = useState('');
+	const [currentWidth, setCurrentWidth] = useState();
+	// const getCurrentWidth = () => {
+	// 	setCurrentWidth(window.innerWidth);
+	// 	setCurrentWidth(document.documentElement.clientWidth);
+	// 	setCurrentWidth(document.body.clientWidth);
+	// };
+
+	window.addEventListener(
+		'resize',
+		function (event) {
+			setCurrentWidth(window.innerWidth);
+		},
+		true
+	);
 
 	useEffect(() => {
 		function verifyImage() {
@@ -112,13 +126,32 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 		}
 		verifyImage();
 	}, []);
+
+	const [widthCheck, setWidthCheck] = useState(0);
+	useEffect(() => {
+		const getCurrentWidth = () => {
+			window.addEventListener(
+				'resize',
+				function (event) {
+					setCurrentWidth(window.innerWidth);
+				},
+				true
+			);
+			if (currentWidth <= 1060) {
+				setWidthCheck(2);
+			} else {
+				setWidthCheck(4);
+			}
+		};
+		getCurrentWidth();
+	}, [currentWidth]);
 	return (
 		<Container>
-			<div>
+			<div className="carousel-wrapper">
 				<h2>{title}</h2>
 				<Carousel
 					itemsToScroll={8}
-					itemsToShow={4}
+					itemsToShow={widthCheck}
 					className="carousel-container"
 				>
 					<div className="carousel-item">
@@ -142,6 +175,12 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 								s/ juros
 							</p>
 						</div>
+						<div className="mobile-buy">
+							<input type="number" value="1" name="quantity" min="1" max="10" />
+							<button>
+								<img src={ProductsCart} alt="" />
+							</button>
+						</div>
 						<div className="buy-container">
 							<img src={ProductsCart} alt="" />
 							<h4>Comprar</h4>
@@ -167,6 +206,12 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 								</strong>
 								s/ juros
 							</p>
+						</div>
+						<div className="mobile-buy">
+							<input type="number" value="1" name="quantity" min="1" max="10" />
+							<button>
+								<img src={ProductsCart} alt="" />
+							</button>
 						</div>
 						<div className="buy-container">
 							<img src={ProductsCart} alt="" />
@@ -194,6 +239,12 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 								s/ juros
 							</p>
 						</div>
+						<div className="mobile-buy">
+							<input type="number" value="1" name="quantity" min="1" max="10" />
+							<button>
+								<img src={ProductsCart} alt="" />
+							</button>
+						</div>
 						<div className="buy-container">
 							<img src={ProductsCart} alt="" />
 							<h4>Comprar</h4>
@@ -219,6 +270,12 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 								</strong>
 								s/ juros
 							</p>
+						</div>
+						<div className="mobile-buy">
+							<input type="number" value="1" name="quantity" min="1" max="10" />
+							<button>
+								<img src={ProductsCart} alt="" />
+							</button>
 						</div>
 						<div className="buy-container">
 							<img src={ProductsCart} alt="" />
@@ -246,6 +303,12 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 								s/ juros
 							</p>
 						</div>
+						<div className="mobile-buy">
+							<input type="number" value="1" name="quantity" min="1" max="10" />
+							<button>
+								<img src={ProductsCart} alt="" />
+							</button>
+						</div>
 						<div className="buy-container">
 							<img src={ProductsCart} alt="" />
 							<h4>Comprar</h4>
@@ -271,6 +334,12 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 								</strong>
 								s/ juros
 							</p>
+						</div>
+						<div className="mobile-buy">
+							<input type="number" value="1" name="quantity" min="1" max="10" />
+							<button>
+								<img src={ProductsCart} alt="" />
+							</button>
 						</div>
 						<div className="buy-container">
 							<img src={ProductsCart} alt="" />
@@ -298,6 +367,12 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 								s/ juros
 							</p>
 						</div>
+						<div className="mobile-buy">
+							<input type="number" value="1" name="quantity" min="1" max="10" />
+							<button>
+								<img src={ProductsCart} alt="" />
+							</button>
+						</div>
 						<div className="buy-container">
 							<img src={ProductsCart} alt="" />
 							<h4>Comprar</h4>
@@ -323,6 +398,12 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 								</strong>
 								s/ juros
 							</p>
+						</div>
+						<div className="mobile-buy">
+							<input type="number" value="1" name="quantity" min="1" max="10" />
+							<button>
+								<img src={ProductsCart} alt="" />
+							</button>
 						</div>
 						<div className="buy-container">
 							<img src={ProductsCart} alt="" />

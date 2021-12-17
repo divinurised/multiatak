@@ -15,6 +15,9 @@ export const Container = styled.div`
 	.banner-container {
 		display: flex;
 		position: relative;
+		.mobile-banner {
+			display: none;
+		}
 		.left-triangle {
 			left: 0%;
 			background: transparent;
@@ -23,7 +26,7 @@ export const Container = styled.div`
 			transform: rotate(-90deg);
 			pointer-events: none;
 			img {
-				width: 45.6rem;
+				width: 45.3rem;
 			}
 		}
 		.right-triangle {
@@ -34,8 +37,24 @@ export const Container = styled.div`
 			transform: rotate(-180deg);
 			pointer-events: none;
 			img {
-				width: 45.6rem;
+				width: 45.3rem;
 			}
+		}
+	}
+	@media (max-width: 1250px) {
+		.right-triangle,
+		.left-triangle {
+			display: none;
+		}
+	}
+	@media (max-width: 830px) {
+		.mobile-banner {
+			display: block !important;
+			width: 100vw;
+			height: 100%;
+		}
+		.desktop-banner {
+			display: none;
 		}
 	}
 `;
@@ -55,24 +74,56 @@ export const BenefitsContainer = styled.div`
 		align-items: center;
 		padding: 1.5rem 2rem;
 		background: white;
+		gap: 15px;
+		height: 7rem;
 		img {
 			width: 2rem;
 			height: 2rem;
-			margin-right: 10px;
+		}
+	}
+	@media (max-width: 1160px) {
+		width: 90%;
+	}
+	@media (max-width: 960px) {
+		grid-template-columns: 1fr 1fr;
+		text-align: center;
+		margin-top: 20px;
+		div {
+			flex-direction: column;
+			align-items: center;
+			gap: 15px;
+		}
+	}
+	@media (max-width: 550px) {
+		div {
+			flex-direction: column;
+			align-items: center;
+			gap: 20;
+			font-size: 100%;
 		}
 	}
 `;
 export const MiniBannerContainer = styled.div`
 	width: 1120px;
-	margin-top: 2rem;
+	margin-top: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-bottom: 3rem;
+	padding-bottom: 20px;
 	background: #fff;
 	z-index: 1;
 	img {
-		width: calc(50% - 1rem);
+		width: calc(50% - 0.5rem);
 		cursor: pointer;
+	}
+	@media (max-width: 1160px) {
+		width: 90%;
+	}
+	@media (max-width: 960px) {
+		flex-wrap: wrap;
+		gap: 20px;
+		img {
+			width: 100%;
+		}
 	}
 `;

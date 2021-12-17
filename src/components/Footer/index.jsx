@@ -61,18 +61,22 @@ function Footer() {
 			<div className="payment-container">
 				<div>
 					<h3>Meios de Pagamento</h3>
-					<img src={VisaIcon} alt="" />
-					<img src={MastercardIcon} alt="" />
-					<img src={PagseguroIcon} alt="" />
-					<img src={EloIcon} alt="" />
-					<img src={HipercardIcon} alt="" />
-					<img src={Billet} alt="" />
+					<div>
+						<img src={VisaIcon} alt="" />
+						<img src={MastercardIcon} alt="" />
+						<img src={PagseguroIcon} alt="" />
+						<img src={EloIcon} alt="" />
+						<img src={HipercardIcon} alt="" />
+						<img src={Billet} alt="" />
+					</div>
 				</div>
 				<div>
 					<h3>Meios de Envio</h3>
-					<img src={CorreiosIcon} alt="" />
-					<img src={PacIcon} alt="" />
-					<img src={SedexIcon} alt="" />
+					<div>
+						<img src={CorreiosIcon} alt="" />
+						<img src={PacIcon} alt="" />
+						<img src={SedexIcon} alt="" />
+					</div>
 				</div>
 			</div>
 			<div className="footer-logo-container">

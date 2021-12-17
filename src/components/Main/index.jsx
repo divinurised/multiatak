@@ -70,14 +70,18 @@ function Main() {
 				item4={Products[3]}
 				title="Mais Populares"
 			/>
-			<div className="newsletter-container">
+			<div className="newsletter-container first-newsletter">
 				<div>
-					<img src={NewsletterLogo} alt="" />
-					<div>
+					<div className="newsletter-logo">
+						<img src={NewsletterLogo} alt="" />
 						<h5>Cadastre-se e receba promoções e ofertas exclusivas!</h5>
+					</div>
+					<div>
 						<form action="submit">
-							<input type="text" placeholder="Nome" />
-							<input type="email" placeholder="E-mail" />
+							<div>
+								<input type="text" placeholder="Nome" />
+								<input type="email" placeholder="E-mail" />
+							</div>
 							<button type="submit">Enviar</button>
 						</form>
 					</div>
@@ -154,6 +158,23 @@ function Main() {
 						/>
 					</TabPanel>
 				</Box>
+			</div>
+			<div className="newsletter-container second-newsletter">
+				<div>
+					<div className="newsletter-logo">
+						<img src={NewsletterLogo} alt="" />
+						<h5>Cadastre-se e receba promoções e ofertas exclusivas!</h5>
+					</div>
+					<div>
+						<form action="submit">
+							<div>
+								<input type="text" placeholder="Nome" />
+								<input type="email" placeholder="E-mail" />
+							</div>
+							<button type="submit">Enviar</button>
+						</form>
+					</div>
+				</div>
 			</div>
 		</Container>
 	);

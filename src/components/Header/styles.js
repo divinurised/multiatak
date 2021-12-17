@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-	height: 12rem;
+	height: 10rem;
 	width: 100%;
 
 	display: flex;
@@ -9,6 +9,10 @@ export const Container = styled.div`
 	flex-direction: column;
 
 	background: var(--light-gray);
+	@media (max-width: 1160px) {
+		/* height: fit-content; */
+		display: none;
+	}
 `;
 export const HeaderContainer = styled.header`
 	width: 1120px;
@@ -18,7 +22,7 @@ export const HeaderContainer = styled.header`
 	:before {
 		content: '';
 		width: 1000px;
-		height: 7rem;
+		height: 6rem;
 
 		position: absolute;
 		margin-left: -1000px;
@@ -26,10 +30,19 @@ export const HeaderContainer = styled.header`
 
 		background: #fff;
 	}
+	@media (max-width: 1160px) {
+		width: 95%;
+		/* margin-left: -50px; */
+		box-sizing: content-box;
+		:before {
+			/* height: 0; */
+			position: absolute;
+		}
+	}
 `;
 export const LogoContainer = styled.div`
 	width: 15rem;
-	height: 7rem;
+	height: 6rem;
 
 	display: flex;
 	align-items: center;
@@ -42,7 +55,18 @@ export const LogoContainer = styled.div`
 		cursor: pointer;
 	}
 	img:nth-child(2) {
-		width: 7rem;
+		width: 6rem;
+	}
+	@media (max-width: 1160px) {
+		height: 100%;
+		width: 20%;
+		img {
+			width: 90%;
+		}
+		img:nth-child(2) {
+			width: 40%;
+			margin-right: 13%;
+		}
 	}
 `;
 export const TextAreaContainer = styled.div`
@@ -90,10 +114,13 @@ export const InfoContainer = styled.div`
 	img {
 		width: 1.2rem;
 	}
+	@media (max-width: 1160px) {
+		margin-left: 5%;
+	}
 `;
 export const NavContainer = styled.nav`
 	width: 1120px;
-	height: 5rem;
+	height: 4rem;
 	display: flex;
 	background: var(--dark-gray);
 	color: #fff;
@@ -101,42 +128,39 @@ export const NavContainer = styled.nav`
 	:after {
 		content: '';
 		width: 1000px;
-		height: 5rem;
+		height: 4rem;
 
 		position: absolute;
-		/* margin-right: -2000px; */
-		right: -84%;
+		left: 96%;
 		z-index: 0;
-
 		background: #fff;
 	}
 
 	.departament-container {
 		display: flex;
 		align-items: center;
-		img {
-			width: 5rem;
-			height: fit-content;
-			cursor: pointer;
+		> img {
+			width: 7rem;
 		}
 		p {
 			cursor: pointer;
 			img {
-				width: 1.7rem;
+				width: 1.5rem;
 				margin-right: 10px;
 			}
 			width: 10rem;
-			height: 5rem;
+			height: 4rem;
 			display: flex;
 			align-items: center;
 			background: var(--light-gray);
+			font-size: 0.9rem;
 		}
 	}
 	:before {
 		content: '';
 		width: 1000px;
 		margin-left: -1000px;
-		height: 5rem;
+		height: 4rem;
 		background: var(--light-gray);
 		position: absolute;
 		z-index: 2;
@@ -154,9 +178,10 @@ export const NavContainer = styled.nav`
 			cursor: pointer;
 			color: gray;
 			> div {
-				height: 4rem;
+				height: 3rem;
 				display: flex;
 				align-items: center;
+				margin-bottom: -0.5rem;
 			}
 			img {
 				width: 1.5rem;
@@ -196,7 +221,7 @@ export const NavContainer = styled.nav`
 			background: red;
 		}
 		> img {
-			width: 11rem;
+			width: 9rem;
 			cursor: pointer;
 			z-index: 1;
 		}
@@ -205,6 +230,46 @@ export const NavContainer = styled.nav`
 			margin-top: -50px;
 			font-size: 1rem;
 			z-index: 2;
+		}
+	}
+	@media (max-width: 1160px) {
+		width: 95%;
+		height: 40%;
+		:after,
+		:before {
+			/* background: red; */
+			height: 100%;
+		}
+		.departament-container {
+			> img {
+				width: 30%;
+			}
+			p {
+				font-size: 80%;
+				img {
+					width: 15%;
+				}
+			}
+		}
+		ul {
+			font-size: 80%;
+			> img {
+				height: 90%;
+			}
+			.path {
+				width: 100%;
+			}
+			li {
+				margin-right: 10px;
+
+				> div {
+					height: 90%;
+					width: fit-content;
+					img {
+						width: 20%;
+					}
+				}
+			}
 		}
 	}
 `;

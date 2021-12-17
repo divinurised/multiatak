@@ -1,5 +1,6 @@
 import { Container, BenefitsContainer, MiniBannerContainer } from './styles';
 import MainBanner from '../../assets/banners/banner-principal-desk.jpg';
+import MainBannerMobile from '../../assets/banners/banner-principal-mobile.jpg';
 import TruckIcon from '../../assets/icones_home/truck.svg';
 import CreditCardIcon from '../../assets/icones_home/credit-card.svg';
 import LockIcon from '../../assets/icones_home/lock.svg';
@@ -18,7 +19,16 @@ function Banner() {
 				<div className="right-triangle">
 					<img src={WhiteTriangle} alt="" />
 				</div>
-				<img src={MainBanner} alt="Banner Principal" />
+				<img
+					src={MainBanner}
+					alt="Banner Principal"
+					className="desktop-banner"
+				/>
+				<img
+					src={MainBannerMobile}
+					alt="Banner Principal"
+					className="mobile-banner"
+				/>
 			</div>
 			<BenefitsContainer>
 				<div>
