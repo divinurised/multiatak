@@ -19,11 +19,7 @@ function Banner() {
 				<div className="right-triangle">
 					<img src={WhiteTriangle} alt="" />
 				</div>
-				<img
-					src={MainBanner}
-					alt="Banner Principal"
-					className="desktop-banner"
-				/>
+				<img src={MainBanner} alt="Banner Principal" className="desktop-banner" />
 				<img
 					src={MainBannerMobile}
 					alt="Banner Principal"
