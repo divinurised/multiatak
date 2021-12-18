@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+<p align="center">
+<img src="./.github/logo-header.svg" width="350px">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">A E-Commerce homepage for Multiatak company</p>
+<p align="center">You can see the application running here: <a href="#">Multiatak</a>.</p>
 
-## Available Scripts
+<p align="center">
+ <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=a70000&labelColor=000000" alt="PRs welcome!" />
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=a70000&labelColor=000000">
+</p>
 
-In the project directory, you can run:
+## Desktop preview 🖥️
 
-### `yarn start`
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Preview](.github/desktop-preview.gif)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br/>
 
-### `yarn test`
+## Mobile preview 📱
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br/>
 
-### `yarn build`
+![Preview](.github/mobile-preview.gif)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Techs and Libs 🧪
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project was developed with the following technologies and libraries:
 
-### `yarn eject`
+- [React](https://reactjs.org)
+- [Styled Components](https://styled-components.com/)
+- [Material UI](https://mui.com/pt/)
+- [React Elastic Carousel](https://sag1v.github.io/react-elastic-carousel/)
+- [React Icons](https://react-icons.github.io/react-icons/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project 💻
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This is a project that is one of the hiring stages for a Front-end position at [Eva Commerce](https://evacommerce.com.br/).
+The purpose is to create a responsive website following a ready-made layout, using HTML, CSS and technologies of my choice.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Layout 💅
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The layouts design are available in these files:
 
-## Learn More
+- [Desktop](./.github/desktop-layout.psd)
+- [Mobile](./.github/mobile-layout.psd)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Running it 🚀
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Clone the project and access its folder.
 
-### Code Splitting
+```bash
+$ git clone https://github.com/divinurised/multiatak
+$ cd multiatak
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To start it, follow the steps below:
 
-### Analyzing the Bundle Size
+```bash
+# Install dependencies
+$ yarn
+# Start the project
+$ yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Or
 
-### Making a Progressive Web App
+```bash
+# Install dependencies
+$ npm install
+# Start the project
+$ npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The app will be available in your browser at the url http://localhost:3000.
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[MIT License](./LICENSE.md)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with ⭐ by Davi Alcântara.
