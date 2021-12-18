@@ -7,6 +7,7 @@ export const Container = styled.div`
 	flex-direction: column;
 	background: var(--background);
 	padding-bottom: 50px;
+	position: relative;
 	.newsletter-container {
 		height: 4rem;
 		width: 1140px;
@@ -24,6 +25,8 @@ export const Container = styled.div`
 		> div {
 			display: flex;
 			align-items: center;
+			justify-content: space-between;
+			width: 100%;
 			.newsletter-logo {
 				display: flex;
 				align-items: center;
@@ -42,7 +45,7 @@ export const Container = styled.div`
 					color: var(--text-gray);
 					padding: 0.5rem;
 					border: 1px solid var(--text-gray);
-					width: 45%;
+					width: 46%;
 					+ input {
 						margin-left: 1rem;
 					}
@@ -52,17 +55,19 @@ export const Container = styled.div`
 					color: #fff;
 					background: var(--strong);
 					border: none;
-					/* margin: 0 20px; */
 					text-transform: uppercase;
 					cursor: pointer;
+					letter-spacing: 2px;
 				}
 			}
 		}
 	}
 	.second-newsletter {
 		display: none;
+		margin-bottom: 30px;
 	}
 	.separator-container {
+		position: absolute;
 		z-index: 1;
 		background: var(--background);
 		width: 1400px;
@@ -74,6 +79,7 @@ export const Container = styled.div`
 	}
 	.menu-container {
 		width: 1140px;
+		margin-bottom: 4rem;
 		.MuiButtonBase-root {
 			margin-top: 20px;
 			text-transform: none;
@@ -86,7 +92,7 @@ export const Container = styled.div`
 		}
 		div[role='tabpanel'] {
 			background: #fff;
-			height: 420px;
+			height: calc(350px);
 		}
 		.MuiTabs-flexContainer {
 			button:not(:last-child) {
@@ -97,7 +103,11 @@ export const Container = styled.div`
 			display: none;
 		}
 		.MuiBox-root {
+			padding: 0;
 			border-bottom: none;
+			h2 {
+				display: none;
+			}
 		}
 	}
 	@media (max-width: 1400px) {

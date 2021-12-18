@@ -34,12 +34,14 @@ export const Container = styled.div`
 	.info-container {
 		justify-content: space-between;
 		gap: 50px;
+		padding: 0 0 3rem;
+		width: 70%;
 		a,
 		p {
 			display: block;
 			color: white;
 			text-decoration: none;
-			font-size: 1rem;
+			font-size: 0.9rem;
 			&:not(:last-child) {
 				margin-bottom: 10px;
 			}
@@ -56,10 +58,11 @@ export const Container = styled.div`
 		}
 	}
 	.payment-container {
+		width: 70%;
 		> div {
 			display: flex;
 			&:first-child {
-				margin-right: 5rem;
+				margin-right: 3rem;
 			}
 		}
 		h3 {
@@ -86,7 +89,7 @@ export const Container = styled.div`
 		p {
 			margin-top: 30px;
 			color: #6d6d6d;
-			font-size: 0.9rem;
+			font-size: 0.8rem;
 		}
 	}
 	.created-by-container {
@@ -104,6 +107,7 @@ export const Container = styled.div`
 		> div,
 		.back-to-top {
 			width: 90%;
+			z-index: 2;
 		}
 	}
 	@media (max-width: 930px) {
@@ -122,12 +126,14 @@ export const Container = styled.div`
 		.info-container {
 			flex-direction: column;
 			font-size: 1rem;
+			width: 90%;
 		}
 		h3 {
 			font-size: 1.5rem;
 		}
 		gap: 20px;
 		.payment-container {
+			width: 90%;
 			gap: 20px;
 			> div {
 				flex-direction: column;

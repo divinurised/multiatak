@@ -20,11 +20,6 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 	const [itemImage3, setItemImage3] = useState('');
 	const [itemImage4, setItemImage4] = useState('');
 	const [currentWidth, setCurrentWidth] = useState();
-	// const getCurrentWidth = () => {
-	// 	setCurrentWidth(window.innerWidth);
-	// 	setCurrentWidth(document.documentElement.clientWidth);
-	// 	setCurrentWidth(document.body.clientWidth);
-	// };
 
 	window.addEventListener(
 		'resize',

@@ -51,7 +51,7 @@ function Main() {
 		};
 	}
 	return (
-		<Container>
+		<Container id="hero">
 			<div className="separator-container">
 				<img src={LeftCategory} alt="" />
 				<img src={RightCategory} alt="" />
@@ -128,33 +128,33 @@ function Main() {
 					<TabPanel value={value} index={1}>
 						<ProductCarousel
 							item1={Products[1]}
-							item2={Products[2]}
-							item3={Products[3]}
+							item2={Products[3]}
+							item3={Products[4]}
 							item4={Products[4]}
 						/>
 					</TabPanel>
 					<TabPanel value={value} index={2}>
 						<ProductCarousel
 							item1={Products[1]}
-							item2={Products[2]}
+							item2={Products[1]}
 							item3={Products[3]}
-							item4={Products[4]}
+							item4={Products[3]}
 						/>
 					</TabPanel>
 					<TabPanel value={value} index={3}>
 						<ProductCarousel
-							item1={Products[1]}
-							item2={Products[2]}
+							item1={Products[2]}
+							item2={Products[4]}
 							item3={Products[3]}
-							item4={Products[4]}
+							item4={Products[2]}
 						/>
 					</TabPanel>
 					<TabPanel value={value} index={4}>
 						<ProductCarousel
 							item1={Products[1]}
-							item2={Products[2]}
+							item2={Products[3]}
 							item3={Products[3]}
-							item4={Products[4]}
+							item4={Products[1]}
 						/>
 					</TabPanel>
 				</Box>

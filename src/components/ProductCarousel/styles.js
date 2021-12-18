@@ -6,6 +6,8 @@ export const Container = styled.div`
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+	z-index: 2;
+	margin-top: 20px;
 	> div {
 		display: flex;
 		flex-direction: column;
@@ -77,7 +79,7 @@ export const Container = styled.div`
 		}
 		cursor: pointer;
 		width: 245px;
-		height: 420px;
+		height: calc(340px + 4rem);
 		margin-bottom: 20px;
 		display: flex;
 		flex-direction: column;
@@ -88,10 +90,13 @@ export const Container = styled.div`
 		> div {
 			background: #fff;
 			width: 245px;
-			height: 420px;
+			height: 340px;
 			> img {
 				margin-top: 30px;
 				height: 160px;
+			}
+			> strong {
+				color: var(--strong);
 			}
 		}
 		.buy-container {
@@ -104,7 +109,7 @@ export const Container = styled.div`
 			align-items: center;
 			text-transform: uppercase;
 			color: #fff;
-			margin: 5px;
+			margin: 0.5rem;
 			img {
 				width: 1.5rem;
 				height: fit-content;
@@ -121,21 +126,29 @@ export const Container = styled.div`
 		p {
 			font-size: 0.8rem;
 			opacity: 0.8;
-			margin: 10px 5px;
+			margin: 10px;
+			height: 30px;
 			text-overflow: ellipsis;
 			word-wrap: break-word;
 			overflow: hidden;
 			max-height: 2.4em;
 			line-height: 1.2em;
+			color: gray;
+			margin-bottom: 20px;
 		}
 		p:last-child {
-			margin-top: 30px;
-		}
-		strong {
-			color: var(--strong);
+			color: #000;
+			/* font-weight: 500; */
+			strong {
+				font-weight: 800;
+			}
 		}
 	}
-
+	@media (max-width: 1250px) {
+		h2 {
+			text-align: center;
+		}
+	}
 	@media (max-width: 1160px) {
 		width: 100%;
 		> div {
@@ -190,6 +203,7 @@ export const Container = styled.div`
 					border: none;
 					background: var(--dark-gray);
 					max-width: 50%;
+					padding: 0.5rem;
 					img {
 						width: 25%;
 					}
@@ -211,6 +225,9 @@ export const Container = styled.div`
 		}
 	}
 	@media (max-width: 700px) {
+		.carousel-item {
+			font-size: 1.5rem;
+		}
 		.rec-arrow {
 			display: none;
 		}

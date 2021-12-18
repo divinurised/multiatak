@@ -35,7 +35,6 @@ export const Container = styled.div`
 			align-items: center;
 			> img {
 				width: 30%;
-				/* margin-right: auto; */
 			}
 			> div {
 				display: flex;
@@ -201,16 +200,46 @@ export const MenuToggled = styled.div`
 	width: 100%;
 	height: fit-content;
 	z-index: 3;
-	background: var(--light-gray);
+	background: var(--dark-gray);
 	flex-direction: column;
 	align-items: center;
-	p {
+	font-size: 2rem;
+	color: #fff;
+	gap: 40px;
+	padding: 0 0 4rem;
+	> p {
 		margin-left: auto;
 		padding: 0.5rem;
 		color: var(--strong);
-		font-size: 2rem;
+		cursor: pointer;
 	}
 	img {
 		width: 80%;
+	}
+	.categories-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		cursor: pointer;
+		&:not(:last-child) {
+			border-bottom: 5px solid var(--light-gray);
+		}
+		div:last-child {
+			margin-bottom: 20px;
+		}
+		> div {
+			display: flex;
+			gap: 20px;
+			width: 80%;
+			padding: 0.5rem;
+			:hover {
+				border-bottom: 2px solid var(--strong);
+			}
+			img {
+				width: 2rem;
+			}
+		}
 	}
 `;

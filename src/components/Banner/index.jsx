@@ -1,4 +1,5 @@
 import { Container, BenefitsContainer, MiniBannerContainer } from './styles';
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import MainBanner from '../../assets/banners/banner-principal-desk.jpg';
 import MainBannerMobile from '../../assets/banners/banner-principal-mobile.jpg';
 import TruckIcon from '../../assets/icones_home/truck.svg';
@@ -19,7 +20,13 @@ function Banner() {
 				<div className="right-triangle">
 					<img src={WhiteTriangle} alt="" />
 				</div>
-				<img src={MainBanner} alt="Banner Principal" className="desktop-banner" />
+				<BsChevronLeft className="nextPreviousImage left" size={40} />
+				<BsChevronRight className="nextPreviousImage right" size={40} />
+				<img
+					src={MainBanner}
+					alt="Banner Principal"
+					className="desktop-banner"
+				/>
 				<img
 					src={MainBannerMobile}
 					alt="Banner Principal"

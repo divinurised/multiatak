@@ -2,10 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	width: 100vw;
-	/* max-width: 100; */
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
 	align-items: center;
 	> img {
 		z-index: 0;
@@ -18,11 +16,26 @@ export const Container = styled.div`
 		.mobile-banner {
 			display: none;
 		}
+		.nextPreviousImage {
+			position: absolute;
+			z-index: 2;
+			fill: var(--background);
+			border-radius: 50%;
+			cursor: pointer;
+			opacity: 0.6;
+			top: 40%;
+			&.right {
+				right: 20%;
+			}
+			&.left {
+				left: 20%;
+			}
+		}
 		.left-triangle {
 			left: 0%;
 			background: transparent;
 			position: absolute;
-			z-index: 0;
+			z-index: 1;
 			transform: rotate(-90deg);
 			pointer-events: none;
 			img {
@@ -33,7 +46,7 @@ export const Container = styled.div`
 			right: 0%;
 			background: transparent;
 			position: absolute;
-			z-index: 0;
+			z-index: 1;
 			transform: rotate(-180deg);
 			pointer-events: none;
 			img {
@@ -56,6 +69,9 @@ export const Container = styled.div`
 		.desktop-banner {
 			display: none;
 		}
+		.nextPreviousImage {
+			display: none;
+		}
 	}
 `;
 export const BenefitsContainer = styled.div`
@@ -67,6 +83,7 @@ export const BenefitsContainer = styled.div`
 	font-size: 0.8rem;
 	margin-top: -30px;
 	z-index: 1;
+	color: gray;
 	background: #eeeeee;
 	box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
 	div {
@@ -74,7 +91,7 @@ export const BenefitsContainer = styled.div`
 		align-items: center;
 		padding: 1.5rem 2rem;
 		background: white;
-		gap: 15px;
+		gap: 10px;
 		height: 7rem;
 		img {
 			width: 2rem;

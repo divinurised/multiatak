@@ -28,14 +28,14 @@ function Footer() {
 			</div>
 			<div className="info-container">
 				<div>
-					<h2>Institucional</h2>
+					<h3>Institucional</h3>
 					<a href="#">Política de Venda</a>
 					<a href="#">Política de Privacidade</a>
 					<a href="#">Trocas e Devoluções</a>
 					<a href="#">Entrega</a>
 				</div>
 				<div>
-					<h2>Acesso Rápido</h2>
+					<h3>Acesso Rápido</h3>
 					<a href="#">Som e Vídeo</a>
 					<a href="#">Faróis, Lanterna e Iluminação</a>
 					<a href="#">Acessórios Internos</a>
@@ -44,7 +44,7 @@ function Footer() {
 					<a href="#">Infantil</a>
 				</div>
 				<div>
-					<h2>Contato</h2>
+					<h3>Contato</h3>
 					<a href="mailto:contato@multiatak.com.br">contato@multiatak.com.br</a>
 					<a href="tel:+5517991490815">(17) 99149-0815</a>
 					<p>
@@ -53,7 +53,7 @@ function Footer() {
 					</p>
 				</div>
 				<div className="social-media-container">
-					<h2>Redes Sociais</h2>
+					<h3>Redes Sociais</h3>
 					<img src={FacebookIcon} alt="" />
 					<img src={InstagramIcon} alt="" />
 				</div>

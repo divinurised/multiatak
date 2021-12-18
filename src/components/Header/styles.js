@@ -10,7 +10,6 @@ export const Container = styled.div`
 
 	background: var(--light-gray);
 	@media (max-width: 1160px) {
-		/* height: fit-content; */
 		display: none;
 	}
 `;
@@ -32,10 +31,8 @@ export const HeaderContainer = styled.header`
 	}
 	@media (max-width: 1160px) {
 		width: 95%;
-		/* margin-left: -50px; */
 		box-sizing: content-box;
 		:before {
-			/* height: 0; */
 			position: absolute;
 		}
 	}
@@ -227,7 +224,7 @@ export const NavContainer = styled.nav`
 		}
 		> p {
 			margin-left: -55px;
-			margin-top: -50px;
+			margin-top: -40px;
 			font-size: 1rem;
 			z-index: 2;
 		}
@@ -237,7 +234,6 @@ export const NavContainer = styled.nav`
 		height: 40%;
 		:after,
 		:before {
-			/* background: red; */
 			height: 100%;
 		}
 		.departament-container {
