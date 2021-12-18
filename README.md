@@ -22,7 +22,7 @@
 
 <br/>
 
-![Preview](.github/mobile-preview.gif)
+<img src="./.github/mobile-preview.gif" width="300px">
 
 <br/>
 
