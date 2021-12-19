@@ -115,7 +115,7 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 			}
 		}
 		verifyImage();
-	}, []);
+	}, [item1.name, item2.name, item3.name, item4.name]);
 	const [widthCheck, setWidthCheck] = useState(0);
 	useEffect(() => {
 		const getCurrentWidth = () => {
