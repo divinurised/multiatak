@@ -29,19 +29,19 @@ function Footer() {
 			<div className="info-container">
 				<div>
 					<h3>Institucional</h3>
-					<a href="#">Política de Venda</a>
-					<a href="#">Política de Privacidade</a>
-					<a href="#">Trocas e Devoluções</a>
-					<a href="#">Entrega</a>
+					<a href="/">Política de Venda</a>
+					<a href="/">Política de Privacidade</a>
+					<a href="/">Trocas e Devoluções</a>
+					<a href="/">Entrega</a>
 				</div>
 				<div>
 					<h3>Acesso Rápido</h3>
-					<a href="#">Som e Vídeo</a>
-					<a href="#">Faróis, Lanterna e Iluminação</a>
-					<a href="#">Acessórios Internos</a>
-					<a href="#">Acessórios Externos</a>
-					<a href="#">Vestuário</a>
-					<a href="#">Infantil</a>
+					<a href="/">Som e Vídeo</a>
+					<a href="/">Faróis, Lanterna e Iluminação</a>
+					<a href="/">Acessórios Internos</a>
+					<a href="/">Acessórios Externos</a>
+					<a href="/">Vestuário</a>
+					<a href="/">Infantil</a>
 				</div>
 				<div>
 					<h3>Contato</h3>
