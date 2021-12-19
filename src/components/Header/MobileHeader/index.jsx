@@ -35,68 +35,66 @@ function MobileHeader() {
 			<div className="header-container">
 				<div className="toggle-menu">
 					<div onClick={showMobileMenu}>
-						<img src={Menuicon} alt="" />
+						<img src={Menuicon} alt="Menu" />
 					</div>
-					<img src={GrayTriangle} alt="" />
+					<img src={GrayTriangle} alt="Triângulo cinza" />
 				</div>
-
 				<div className="header-wrapper">
-					<img src={Logo} alt="" />
+					<img src={Logo} alt="Logo" />
 					<div>
-						<img src={AccountIcon} alt="" />
-						<img src={CartIcon} alt="" />
+						<img src={AccountIcon} alt="Minha Conta" />
+						<img src={CartIcon} alt="Carrinho" />
 						<p>0</p>
 					</div>
 				</div>
 			</div>
-
 			<div className="search-container">
-				<img src={WhiteTriangle} alt="" />
+				<img src={WhiteTriangle} alt="Triângulo branco" />
 				<form action="">
 					<input type="text" placeholder="Digite aqui o que você procura..." />
 					<button type="submit">
-						<img src={SearchIconMobile} alt="" />
+						<img src={SearchIconMobile} alt="Pesquisar" />
 					</button>
 				</form>
 			</div>
 			<MenuToggled id="toggler">
 				<p onClick={closeMobileMenu}>X</p>
-				<img src={FooterLogo} alt="" />
+				<img src={FooterLogo} alt="Logo" />
 				<h2>Departamentos</h2>
 				<div className="categories-container">
 					<div>
-						<img src={SoundVideoIcon} alt="" />
+						<img src={SoundVideoIcon} alt="Som e Vídeo" />
 						<p>Som e Vídeo</p>
 					</div>
 					<div>
-						<img src={FlashlightIcon} alt="" />
+						<img src={FlashlightIcon} alt="Faróis, Lanternas e Iluminação" />
 						<p>Faróis, Lanternas e Iluminação</p>
 					</div>
 					<div>
-						<img src={InternalAccessoriesIcon} alt="" />
+						<img src={InternalAccessoriesIcon} alt="Acessórios Internos" />
 						<p>Acessórios Internos</p>
 					</div>
 					<div>
-						<img src={ExternalAccessoriesIcon} alt="" />
+						<img src={ExternalAccessoriesIcon} alt="Acessórios Externos" />
 						<p>Acessórios Externos</p>
 					</div>
 					<div>
-						<img src={ClothingsIcon} alt="" />
+						<img src={ClothingsIcon} alt="Vestuários" />
 						<p>Vestuários</p>
 					</div>
 					<div>
-						<img src={ChildrenIcon} alt="" />
+						<img src={ChildrenIcon} alt="Infantil" />
 						<p>Infantil</p>
 					</div>
 				</div>
 				<div className="categories-container">
 					<div>
-						<img src={AccountIconWhite} alt="" />
+						<img src={AccountIconWhite} alt="Minha Conta" />
 						<p>Minha Conta</p>
 					</div>
 					<div>
 						<p>0</p>
-						<img src={ProductsCart} alt="" />
+						<img src={ProductsCart} alt="Carrinho" />
 						<p>Carrinho</p>
 					</div>
 				</div>

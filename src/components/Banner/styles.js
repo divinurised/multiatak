@@ -6,10 +6,9 @@ export const Container = styled.div`
 	flex-direction: column;
 	align-items: center;
 	> img {
-		z-index: 0;
 		width: 100%;
+		z-index: 0;
 	}
-
 	.banner-container {
 		display: flex;
 		position: relative;
@@ -18,9 +17,9 @@ export const Container = styled.div`
 		}
 		.nextPreviousImage {
 			position: absolute;
-			z-index: 2;
-			fill: var(--background);
 			border-radius: 50%;
+			fill: var(--background);
+			z-index: 2;
 			cursor: pointer;
 			opacity: 0.6;
 			top: 40%;
@@ -76,7 +75,6 @@ export const Container = styled.div`
 `;
 export const BenefitsContainer = styled.div`
 	width: 1120px;
-	display: flex;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 2px;
@@ -87,12 +85,12 @@ export const BenefitsContainer = styled.div`
 	background: #eeeeee;
 	box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
 	div {
+		height: 7rem;
 		display: flex;
 		align-items: center;
 		padding: 1.5rem 2rem;
 		background: white;
 		gap: 10px;
-		height: 7rem;
 		img {
 			width: 2rem;
 			height: 2rem;

@@ -20,6 +20,7 @@ export const Container = styled.div`
 	.back-to-top {
 		width: 1190px;
 		height: 5rem;
+		z-index: 2;
 		button {
 			border: none;
 			background: none;

@@ -39,7 +39,6 @@ function Header() {
 					<img src={Logo} alt="Logo" />
 					<img src={WhiteTriangle} alt="" />
 				</LogoContainer>
-
 				<TextAreaContainer>
 					<form>
 						<input
@@ -47,9 +46,8 @@ function Header() {
 							placeholder="Digite aqui o que você procura..."
 						></input>
 					</form>
-					<img src={SearchIcon} alt="" />
+					<img src={SearchIcon} alt="Pesquisar" />
 				</TextAreaContainer>
-
 				<InfoContainer>
 					<div className="info-item">
 						<img src={ContactIcon} alt="Atendimento" />
@@ -57,17 +55,16 @@ function Header() {
 						<RiArrowDownSLine />
 					</div>
 					<div className="info-item">
-						<img src={AccountIcon} alt="Atendimento" />
+						<img src={AccountIcon} alt="Minha conta" />
 						<p>Minha conta</p>
 						<RiArrowDownSLine />
 					</div>
 				</InfoContainer>
 			</HeaderContainer>
-
 			<NavContainer>
 				<div className="departament-container">
 					<p>
-						<img src={Menuicon} alt="" />
+						<img src={Menuicon} alt="Menu" />
 						Todos os <br />
 						Departamentos
 					</p>

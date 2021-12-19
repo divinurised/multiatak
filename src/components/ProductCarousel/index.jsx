@@ -20,7 +20,6 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 	const [itemImage3, setItemImage3] = useState('');
 	const [itemImage4, setItemImage4] = useState('');
 	const [currentWidth, setCurrentWidth] = useState();
-
 	window.addEventListener(
 		'resize',
 		function (event) {
@@ -28,7 +27,6 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 		},
 		true
 	);
-
 	useEffect(() => {
 		function verifyImage() {
 			if (item1.name === 'belt') {
@@ -52,7 +50,6 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 			} else if (item1.name === 'antenna') {
 				setItemImage1(AntennaProduct);
 			}
-
 			if (item2.name === 'belt') {
 				setItemImage2(BeltProduct);
 			} else if (item2.name === 'red-tshirt') {
@@ -74,7 +71,6 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 			} else if (item2.name === 'antenna') {
 				setItemImage2(AntennaProduct);
 			}
-
 			if (item3.name === 'belt') {
 				setItemImage3(BeltProduct);
 			} else if (item3.name === 'red-tshirt') {
@@ -96,7 +92,6 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 			} else if (item3.name === 'antenna') {
 				setItemImage3(AntennaProduct);
 			}
-
 			if (item4.name === 'belt') {
 				setItemImage4(BeltProduct);
 			} else if (item4.name === 'red-tshirt') {
@@ -121,7 +116,6 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 		}
 		verifyImage();
 	}, []);
-
 	const [widthCheck, setWidthCheck] = useState(0);
 	useEffect(() => {
 		const getCurrentWidth = () => {
@@ -151,7 +145,7 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 				>
 					<div className="carousel-item">
 						<div>
-							<img src={itemImage1} alt="" />
+							<img src={itemImage1} alt="Produto" />
 							<p>{item1.title}</p>
 							<strong>
 								{item1.price.toLocaleString('pt-br', {
@@ -173,17 +167,17 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 						<div className="mobile-buy">
 							<input type="number" value="1" name="quantity" min="1" max="10" />
 							<button>
-								<img src={ProductsCart} alt="" />
+								<img src={ProductsCart} alt="Comprar" />
 							</button>
 						</div>
 						<div className="buy-container">
-							<img src={ProductsCart} alt="" />
+							<img src={ProductsCart} alt="Comprar" />
 							<h4>Comprar</h4>
 						</div>
 					</div>
 					<div className="carousel-item">
 						<div>
-							<img src={itemImage2} alt="" />
+							<img src={itemImage2} alt="Produto" />
 							<p>{item2.title}</p>
 							<strong>
 								{item2.price.toLocaleString('pt-br', {
@@ -205,17 +199,17 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 						<div className="mobile-buy">
 							<input type="number" value="1" name="quantity" min="1" max="10" />
 							<button>
-								<img src={ProductsCart} alt="" />
+								<img src={ProductsCart} alt="Comprar" />
 							</button>
 						</div>
 						<div className="buy-container">
-							<img src={ProductsCart} alt="" />
+							<img src={ProductsCart} alt="Comprar" />
 							<h4>Comprar</h4>
 						</div>
 					</div>
 					<div className="carousel-item">
 						<div>
-							<img src={itemImage3} alt="" />
+							<img src={itemImage3} alt="Produto" />
 							<p>{item3.title}</p>
 							<strong>
 								{item3.price.toLocaleString('pt-br', {
@@ -237,17 +231,17 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 						<div className="mobile-buy">
 							<input type="number" value="1" name="quantity" min="1" max="10" />
 							<button>
-								<img src={ProductsCart} alt="" />
+								<img src={ProductsCart} alt="Comprar" />
 							</button>
 						</div>
 						<div className="buy-container">
-							<img src={ProductsCart} alt="" />
+							<img src={ProductsCart} alt="Comprar" />
 							<h4>Comprar</h4>
 						</div>
 					</div>
 					<div className="carousel-item">
 						<div>
-							<img src={itemImage4} alt="" />
+							<img src={itemImage4} alt="Produto" />
 							<p>{item4.title}</p>
 							<strong>
 								{item4.price.toLocaleString('pt-br', {
@@ -269,17 +263,17 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 						<div className="mobile-buy">
 							<input type="number" value="1" name="quantity" min="1" max="10" />
 							<button>
-								<img src={ProductsCart} alt="" />
+								<img src={ProductsCart} alt="Comprar" />
 							</button>
 						</div>
 						<div className="buy-container">
-							<img src={ProductsCart} alt="" />
+							<img src={ProductsCart} alt="Comprar" />
 							<h4>Comprar</h4>
 						</div>
 					</div>
 					<div className="carousel-item">
 						<div>
-							<img src={itemImage1} alt="" />
+							<img src={itemImage1} alt="Produto" />
 							<p>{item1.title}</p>
 							<strong>
 								{item1.price.toLocaleString('pt-br', {
@@ -301,17 +295,17 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 						<div className="mobile-buy">
 							<input type="number" value="1" name="quantity" min="1" max="10" />
 							<button>
-								<img src={ProductsCart} alt="" />
+								<img src={ProductsCart} alt="Comprar" />
 							</button>
 						</div>
 						<div className="buy-container">
-							<img src={ProductsCart} alt="" />
+							<img src={ProductsCart} alt="Comprar" />
 							<h4>Comprar</h4>
 						</div>
 					</div>
 					<div className="carousel-item">
 						<div>
-							<img src={itemImage2} alt="" />
+							<img src={itemImage2} alt="Produto" />
 							<p>{item2.title}</p>
 							<strong>
 								{item2.price.toLocaleString('pt-br', {
@@ -333,17 +327,17 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 						<div className="mobile-buy">
 							<input type="number" value="1" name="quantity" min="1" max="10" />
 							<button>
-								<img src={ProductsCart} alt="" />
+								<img src={ProductsCart} alt="Comprar" />
 							</button>
 						</div>
 						<div className="buy-container">
-							<img src={ProductsCart} alt="" />
+							<img src={ProductsCart} alt="Comprar" />
 							<h4>Comprar</h4>
 						</div>
 					</div>
 					<div className="carousel-item">
 						<div>
-							<img src={itemImage3} alt="" />
+							<img src={itemImage3} alt="Produto" />
 							<p>{item3.title}</p>
 							<strong>
 								{item3.price.toLocaleString('pt-br', {
@@ -365,17 +359,17 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 						<div className="mobile-buy">
 							<input type="number" value="1" name="quantity" min="1" max="10" />
 							<button>
-								<img src={ProductsCart} alt="" />
+								<img src={ProductsCart} alt="Comprar" />
 							</button>
 						</div>
 						<div className="buy-container">
-							<img src={ProductsCart} alt="" />
+							<img src={ProductsCart} alt="Comprar" />
 							<h4>Comprar</h4>
 						</div>
 					</div>
 					<div className="carousel-item">
 						<div>
-							<img src={itemImage4} alt="" />
+							<img src={itemImage4} alt="Produto" />
 							<p>{item4.title}</p>
 							<strong>
 								{item4.price.toLocaleString('pt-br', {
@@ -397,11 +391,11 @@ function ProductCarousel({ title, item1, item2, item3, item4 }) {
 						<div className="mobile-buy">
 							<input type="number" value="1" name="quantity" min="1" max="10" />
 							<button>
-								<img src={ProductsCart} alt="" />
+								<img src={ProductsCart} alt="Comprar" />
 							</button>
 						</div>
 						<div className="buy-container">
-							<img src={ProductsCart} alt="" />
+							<img src={ProductsCart} alt="Comprar" />
 							<h4>Comprar</h4>
 						</div>
 					</div>

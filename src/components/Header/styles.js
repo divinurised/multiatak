@@ -3,11 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
 	height: 10rem;
 	width: 100%;
-
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-
 	background: var(--light-gray);
 	@media (max-width: 1160px) {
 		display: none;
@@ -15,18 +13,15 @@ export const Container = styled.div`
 `;
 export const HeaderContainer = styled.header`
 	width: 1120px;
-
 	display: flex;
 	align-items: center;
 	:before {
 		content: '';
 		width: 1000px;
 		height: 6rem;
-
 		position: absolute;
 		margin-left: -1000px;
 		z-index: 2;
-
 		background: #fff;
 	}
 	@media (max-width: 1160px) {
@@ -40,11 +35,9 @@ export const HeaderContainer = styled.header`
 export const LogoContainer = styled.div`
 	width: 15rem;
 	height: 6rem;
-
 	display: flex;
 	align-items: center;
 	z-index: 1;
-
 	background: #fff;
 	img {
 		width: 10rem;

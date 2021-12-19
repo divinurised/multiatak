@@ -2,61 +2,51 @@
 	{
 		"name": "belt",
 		"title": "Cinto de Segurança 2 Pontos Parte Fêmea 40cm Universal Estático",
-		"price": 13.9,
-		"image": "./assets/fotos_de_produtos/belt.jpg"
+		"price": 13.9
 	},
 	{
 		"name": "sound",
 		"title": "Alto Falante 6 Polegadas 160W RMS Triaxial 4 Ohms Bobina Simples Shutt Par Potência 320W Máxima",
-		"price": 78.9,
-		"image": "/fotos_de_produtos/alto falante.jpg"
+		"price": 78.9
 	},
 	{
 		"name": "bulb",
 		"title": "Par Lâmpadas Super LED H1 H3 H4 H7 H8 H11 H27 HB3 HB4 6000K 6400LM Shocklight Headlight 2D",
-		"price": 64.9,
-		"image": "/fotos_de_produtos/bulb.jpg"
+		"price": 64.9
 	},
 	{
 		"name": "antenna",
 		"title": "Antena Esportiva Automotiva Tubarão Shark Preta Para Teto Universal Decorativa Autocolante",
-		"price": 11.9,
-		"image": "/fotos_de_produtos/antena.jpg"
+		"price": 11.9
 	},
 	{
 		"name": "red-tshirt",
 		"title": "Camiseta vermelha de manga curta feita com algodão",
-		"price": 59.9,
-		"image": "/fotos_de_produtos/red-tshirt.jpg"
+		"price": 59.9
 	},
 	{
 		"name": "black-hoodie",
 		"title": "Moletom preto feito em algodão",
-		"price": 120.9,
-		"image": "/fotos_de_produtos/black-hoodie.jpg"
+		"price": 120.9
 	},
 	{
 		"name": "red-hoodie",
 		"title": "Moletom vermelho feito em algodão",
-		"price": 120.9,
-		"image": "/fotos_de_produtos/red-hoodie.jpg"
+		"price": 120.9
 	},
 	{
 		"name": "black-tshirt",
 		"title": "Camiseta preta de manga curta feita com algodão",
-		"price": 59.9,
-		"image": "/fotos_de_produtos/black-tshirt.jpg"
+		"price": 59.9
 	},
 	{
 		"name": "gray-hoodie",
 		"title": "Moletom cinza feito em algodão",
-		"price": 120.9,
-		"image": "/fotos_de_produtos/gray-hoodie.jpg"
+		"price": 120.9
 	},
 	{
 		"name": "green-hoodie",
 		"title": "Moletom verde feito em algodão",
-		"price": 120.9,
-		"image": "/fotos_de_produtos/green-hoodie.jpg"
+		"price": 120.9
 	}
 ]

@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import ProductCarousel from '../ProductCarousel';
 import { Container } from './styles';
+import ProductCarousel from '../ProductCarousel';
+
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -10,13 +11,11 @@ import Box from '@mui/material/Box';
 import LeftCategory from '../../assets/icones_home/enfeite-mais-vendidos-esq.svg';
 import RightCategory from '../../assets/icones_home/enfeite-mais-vendidos-dir.svg';
 import Products from '../../services/api.json';
-
 import NewsletterLogo from '../../assets/Logo_Newsletter.png';
 
 function Main() {
 	function TabPanel(props) {
 		const { children, value, index, ...other } = props;
-
 		return (
 			<div
 				role="tabpanel"
@@ -34,7 +33,6 @@ function Main() {
 		);
 	}
 	const [value, setValue] = useState(0);
-
 	const handleChange = (event, newValue) => {
 		setValue(newValue);
 	};
@@ -43,7 +41,6 @@ function Main() {
 		index: PropTypes.number.isRequired,
 		value: PropTypes.number.isRequired,
 	};
-
 	function a11yProps(index) {
 		return {
 			id: `simple-tab-${index}`,
@@ -73,7 +70,7 @@ function Main() {
 			<div className="newsletter-container first-newsletter">
 				<div>
 					<div className="newsletter-logo">
-						<img src={NewsletterLogo} alt="" />
+						<img src={NewsletterLogo} alt="Newsletter" />
 						<h5>Cadastre-se e receba promoções e ofertas exclusivas!</h5>
 					</div>
 					<div>
@@ -162,7 +159,7 @@ function Main() {
 			<div className="newsletter-container second-newsletter">
 				<div>
 					<div className="newsletter-logo">
-						<img src={NewsletterLogo} alt="" />
+						<img src={NewsletterLogo} alt="Newsletter" />
 						<h5>Cadastre-se e receba promoções e ofertas exclusivas!</h5>
 					</div>
 					<div>

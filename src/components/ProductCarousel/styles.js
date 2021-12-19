@@ -16,7 +16,6 @@ export const Container = styled.div`
 			margin: 0px 20px 20px;
 		}
 	}
-
 	.carousel-container {
 		display: flex;
 		justify-content: center;

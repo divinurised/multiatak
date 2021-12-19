@@ -23,7 +23,7 @@ function Footer() {
 		<Container>
 			<div className="back-to-top">
 				<button onClick={scrollToTop}>
-					<img src={BackToTopIcon} alt="" />
+					<img src={BackToTopIcon} alt="Volte ao topo" />
 				</button>
 			</div>
 			<div className="info-container">
@@ -54,40 +54,40 @@ function Footer() {
 				</div>
 				<div className="social-media-container">
 					<h3>Redes Sociais</h3>
-					<img src={FacebookIcon} alt="" />
-					<img src={InstagramIcon} alt="" />
+					<img src={FacebookIcon} alt="Facebook" />
+					<img src={InstagramIcon} alt="Instagram" />
 				</div>
 			</div>
 			<div className="payment-container">
 				<div>
 					<h3>Meios de Pagamento</h3>
 					<div>
-						<img src={VisaIcon} alt="" />
-						<img src={MastercardIcon} alt="" />
-						<img src={PagseguroIcon} alt="" />
-						<img src={EloIcon} alt="" />
-						<img src={HipercardIcon} alt="" />
-						<img src={Billet} alt="" />
+						<img src={VisaIcon} alt="Visa" />
+						<img src={MastercardIcon} alt="mastercard" />
+						<img src={PagseguroIcon} alt="pagseguro" />
+						<img src={EloIcon} alt="Elo" />
+						<img src={HipercardIcon} alt="Hipercard" />
+						<img src={Billet} alt="Boleto" />
 					</div>
 				</div>
 				<div>
 					<h3>Meios de Envio</h3>
 					<div>
-						<img src={CorreiosIcon} alt="" />
-						<img src={PacIcon} alt="" />
-						<img src={SedexIcon} alt="" />
+						<img src={CorreiosIcon} alt="Correios" />
+						<img src={PacIcon} alt="PAC" />
+						<img src={SedexIcon} alt="Sedex" />
 					</div>
 				</div>
 			</div>
 			<div className="footer-logo-container">
-				<img src={FooterLogo} alt="" />
+				<img src={FooterLogo} alt="Multiatak" />
 				<p>
 					Copyright Multiatak - 2020. Todos os direitos reservados,
 					13.704.114/0001-64
 				</p>
 			</div>
 			<div className="created-by-container">
-				<img src={EvaFooterLogo} alt="" />
+				<img src={EvaFooterLogo} alt="Eva Commerce" />
 			</div>
 		</Container>
 	);
